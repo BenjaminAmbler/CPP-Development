@@ -17,7 +17,8 @@ int main()
 
     double d1 = 2.2;
     double d2 = i1;
-    int i5 = d1;
+    //int i5 = d1;
+    int i5 = static_cast<int>(d1);
     std::cout << "d1= " << d1 << std::endl;
     std::cout << "d2= " << d2 << std::endl;
     std::cout << "i5= " << i5 << std::endl;
@@ -40,13 +41,15 @@ int main()
     auto a4 = "s";
     auto a5 = true;
     auto a6 = 3L;
+
     auto a7 = 1'000'000'000'000;
     auto a8 = 0xFF; //255
     auto a9 = 0b111; //7
 
 
-    a1 - a2;
+    //a1 = a2;
+    a1 = static_cast<int>(a2);
 
-
+//testing github
     return 0;
 }
